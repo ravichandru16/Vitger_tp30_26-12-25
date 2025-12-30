@@ -16,4 +16,10 @@ public class Samplemethod extends BaseClass_Utilities {
 	{
 		System.out.println("method 2");
 	}
+	
+	@Test(groups="smoke")
+	public void method3()
+	{
+		System.out.println("Smoke Method");
+	}
 }
