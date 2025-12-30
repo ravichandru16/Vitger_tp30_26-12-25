@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite" thread-count="5">
+  <!--<listeners>
+  <listener class-name="genericUtility.ListenersImplements"></listener>
+  </listeners>-->
+  
+  <test name="Test">
+  <groups>
+   <run>
+   <include name="smoke"></include>
+  <!-- <include name="reg"></include>-->
+   </run>
+   </groups>
+    <classes>
+      <class name="testNG_Part.SampleMethods"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <!--<test name="Test1">
+  <groups>
+  <run>
+  <include name="regression"></include>
+  </run>
+  </groups>
+  <packages>
+  <package name="productModule"/>
+  </packages>
+  </test>-->
+</suite> <!-- Suite -->
