@@ -11,7 +11,7 @@ public class Samplemethod extends BaseClass_Utilities {
 	System.out.println("method1");	
 	}
 	
-	@Test
+	@Test(groups="smoke")
 	public void method2()
 	{
 		System.out.println("method 2");
