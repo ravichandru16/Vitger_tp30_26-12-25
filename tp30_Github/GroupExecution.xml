@@ -13,7 +13,7 @@
    </run>
    </groups>
     <classes>
-      <class name="demoTest.SampleMethod"/>
+      <class name="demoTest.Samplemethod"/>
     </classes>
   </test> <!-- Test -->
   
