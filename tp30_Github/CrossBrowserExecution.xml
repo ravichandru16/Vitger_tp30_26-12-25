@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Suite">
+ <listeners>
+ <listener class-name="genericUtility.ListenersImplements"></listener>
+ </listeners>
+ <!----> <test name="ChromeTest">
+   <parameter name="BROWSER" value="chrome"></parameter>
+    <classes>
+    <class name="calenderModule.CreateEventFrom_Test"></class>
+    </classes>
+  </test>
+  <!-- Test -->
+  
+  
+ <!-- <test name="ChromeTest1">
+  <parameter name="BROWSER" value="chrome"></parameter>
+  <packages>
+	
+  </packages>
+  </test>-->
+  <test name="FireFoxTest">
+   <parameter name="BROWSER" value="firefox"></parameter>
+   <classes>
+   <class name="contactsModule.CancelButtoncheckFrom_Test"></class>
+   </classes>
+  </test>  
+  
+ 
+  <!--<test name="FirefoxTest1">
+   <parameter name="BROWSER" value="firefox"></parameter>
+  <packages>
+  	 
+  </packages>
+  </test>-->
+</suite> <!-- Suite -->
